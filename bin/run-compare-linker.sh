@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -ev
 
-if [ -n "${TRAVIS_PULL_REQUEST}" ] && [ "${TRAVIS_PULL_REQUEST}" != "false" ]; then
+if [[ -n "${TRAVIS_PULL_REQUEST}" && "${TRAVIS_PULL_REQUEST}" != "false" ]]; then
   # gem prepare
   gem install --no-document saddler saddler-reporter-github \
   compare_linker_wrapper text_to_checkstyle github_status_notifier

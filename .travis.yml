@@ -10,6 +10,9 @@ before_script:
 - psql -c 'create database travis_ci_test;' -U postgres
 - cp config/database.travis.yml config/database.yml
 - bundle exec rake db:create db:migrate
+after_script:
+- bin/run-tachikoma.sh
+- bin/run-compare-linker.sh
 notifications:
   email:
   - ogataken@gmail.com
