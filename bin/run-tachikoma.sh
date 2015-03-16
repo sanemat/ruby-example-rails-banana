@@ -2,7 +2,7 @@
 set -ev
 
 # only sunday
-if [[ -n "${TRAVIS_PULL_REQUEST}" && "${TRAVIS_PULL_REQUEST}" != "false" && "${TRAVIS_BRANCH}" =~ ^cron_for_tachikoma/.* ]]; then
+if [[ -n "${TRAVIS_PULL_REQUEST}" && "${TRAVIS_PULL_REQUEST}" == "false" && "${TRAVIS_BRANCH}" =~ ^cron_for_tachikoma/.* ]]; then
   # gem prepare
   gem install --no-document git_httpsable-push pull_request-create
 
