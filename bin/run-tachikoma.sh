@@ -13,6 +13,10 @@ if [[ -n "${TRAVIS_PULL_REQUEST}" && "${TRAVIS_PULL_REQUEST}" == "false" && "${T
   HEAD="tachikoma/update-${HEAD_DATE}"
 
   # checkout
+  echo git branch
+  git branch
+  echo git branch -r
+  git branch -r
   git checkout -b "${HEAD}" origin/master
 
   # bundle install
