@@ -12,12 +12,8 @@ if [[ -n "${TRAVIS_PULL_REQUEST}" && "${TRAVIS_PULL_REQUEST}" == "false" && "${T
   HEAD_DATE=$(date +%Y%m%d_%H-%M-%S)
   HEAD="tachikoma/update-${HEAD_DATE}"
 
-  # checkout
-  echo git branch
-  git branch
-  echo git branch -r
-  git branch -r
-  git checkout -b "${HEAD}" origin/master
+  # checkout (for TravisCI)
+  git checkout -b "${HEAD}" "${TRAVIS_BRANCH}"
 
   # bundle install
   bundle --no-deployment --without nothing --jobs 4
