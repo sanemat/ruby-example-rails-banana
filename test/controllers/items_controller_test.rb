@@ -5,18 +5,18 @@ class ItemsControllerTest < ActionController::TestCase
     @item = items(:one)
   end
 
-  test "should get index" do
+  test 'should get index' do
     get :index
     assert_response :success
     assert_not_nil assigns(:items)
   end
 
-  test "should get new" do
+  test 'should get new' do
     get :new
     assert_response :success
   end
 
-  test "should create item" do
+  test 'should create item' do
     assert_difference('Item.count') do
       post :create, params: { item: { description: @item.description, name: @item.name, price: @item.price } }
     end
@@ -24,22 +24,22 @@ class ItemsControllerTest < ActionController::TestCase
     assert_redirected_to item_path(assigns(:item))
   end
 
-  test "should show item" do
+  test 'should show item' do
     get :show, params: { id: @item }
     assert_response :success
   end
 
-  test "should get edit" do
+  test 'should get edit' do
     get :edit, params: { id: @item }
     assert_response :success
   end
 
-  test "should update item" do
+  test 'should update item' do
     patch :update, params: { id: @item, item: { description: @item.description, name: @item.name, price: @item.price } }
     assert_redirected_to item_path(assigns(:item))
   end
 
-  test "should destroy item" do
+  test 'should destroy item' do
     assert_difference('Item.count', -1) do
       delete :destroy, params: { id: @item }
     end

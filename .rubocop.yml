@@ -2,6 +2,7 @@ AllCops:
   Exclude:
     - 'bundle_bin/*'
     - 'vendor/bundle/**/*'
+    - 'db/schema.rb'
 
 Style/Documentation:
   Enabled: false
