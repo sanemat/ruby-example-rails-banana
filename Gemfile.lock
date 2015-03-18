@@ -6,7 +6,7 @@ GIT
 
 GIT
   remote: git://github.com/rails/rails.git
-  revision: 82c2baf5348c7f1fa54f410282c11ba1cee2f377
+  revision: c2152a0dd7b3b37c757169c56053ff0b59ce1cc4
   specs:
     actionmailer (5.0.0.alpha)
       actionpack (= 5.0.0.alpha)
@@ -62,7 +62,7 @@ GIT
 
 GIT
   remote: git://github.com/rails/turbolinks.git
-  revision: 65c5e6701cdb845cac6797d89a1891c010182369
+  revision: 4e9acc30ded75bb4fd88597b90eadcbf9c809545
   specs:
     turbolinks (3.0.0)
       coffee-rails
@@ -115,7 +115,7 @@ GEM
       rack (>= 1.0)
     rails-deprecated_sanitizer (1.0.3)
       activesupport (>= 4.2.0.alpha)
-    rails-dom-testing (1.0.5)
+    rails-dom-testing (1.0.6)
       activesupport (>= 4.2.0.beta, < 5.0)
       nokogiri (~> 1.6.0)
       rails-deprecated_sanitizer (>= 1.0.1)
