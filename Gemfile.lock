@@ -1,12 +1,12 @@
 GIT
   remote: git://github.com/rails/arel.git
-  revision: b91dcb23af5917d8a62afc8a5a72780aaf11f64b
+  revision: c7ca1568013d244b9c61147b20b4424d741e91ac
   specs:
     arel (7.0.0.alpha)
 
 GIT
   remote: git://github.com/rails/rails.git
-  revision: 82c2baf5348c7f1fa54f410282c11ba1cee2f377
+  revision: 348377da4d623a81b570b2bf46e6ef9e5ee4e12f
   specs:
     actionmailer (5.0.0.alpha)
       actionpack (= 5.0.0.alpha)
@@ -57,12 +57,13 @@ GIT
     railties (5.0.0.alpha)
       actionpack (= 5.0.0.alpha)
       activesupport (= 5.0.0.alpha)
+      method_source
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
 
 GIT
   remote: git://github.com/rails/turbolinks.git
-  revision: 65c5e6701cdb845cac6797d89a1891c010182369
+  revision: c745dea269b9bae39146cb7f5ea52328fbca7ce8
   specs:
     turbolinks (3.0.0)
       coffee-rails
@@ -73,7 +74,7 @@ GEM
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
-    byebug (4.0.2)
+    byebug (4.0.3)
       columnize (= 0.9.0)
     coffee-rails (4.1.0)
       coffee-script (>= 2.2.0)
@@ -90,7 +91,7 @@ GEM
       activesupport (>= 4.1.0)
     hike (1.2.3)
     i18n (0.7.0)
-    jbuilder (2.2.11)
+    jbuilder (2.2.12)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
     jquery-rails (4.0.3)
@@ -115,7 +116,7 @@ GEM
       rack (>= 1.0)
     rails-deprecated_sanitizer (1.0.3)
       activesupport (>= 4.2.0.alpha)
-    rails-dom-testing (1.0.5)
+    rails-dom-testing (1.0.6)
       activesupport (>= 4.2.0.beta, < 5.0)
       nokogiri (~> 1.6.0)
       rails-deprecated_sanitizer (>= 1.0.1)
