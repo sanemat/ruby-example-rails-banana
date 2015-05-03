@@ -1,3 +1,3 @@
 ## README
 
-Rails application
+Simple Rails Application
